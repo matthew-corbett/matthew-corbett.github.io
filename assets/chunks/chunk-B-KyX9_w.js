@@ -1,0 +1,1 @@
+import{r,h as n}from"./chunk-Cmr4nUfp.js";const s="div",c=r.forwardRef(({tag:a,...e},t)=>{const o=n(e)??a??s;return r.createElement(o,{...e,ref:t})});c.displayName="Box";const d="h1",f=r.forwardRef(({tag:a,...e},t)=>{const o=n(e)??a??d;return r.createElement(o,{...e,ref:t})});f.displayName="Heading";export{f as d,c as n};
