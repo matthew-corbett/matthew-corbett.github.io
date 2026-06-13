@@ -33,6 +33,7 @@ body.direction-b {
   color: var(--text);
   background: var(--slate-50);
   line-height: 1.6;
+  white-space: normal;
 }
 
 body.direction-b .w-body {
@@ -267,6 +268,7 @@ body.direction-b main {
   line-height: 1.65;
   width: auto !important;
   min-width: 0 !important;
+  white-space: normal;
 }
 
 .hero-tags {
