@@ -27,6 +27,12 @@
   --font-heading: "Raleway", system-ui, sans-serif;
 }
 
+/* Webstudio sets :root { white-space: pre-wrap } — reset on Direction B pages */
+html:has(body.direction-b) {
+  white-space: normal;
+  white-space-collapse: collapse;
+}
+
 body.direction-b {
   font-family: var(--font-body) !important;
   text-shadow: none !important;
@@ -34,6 +40,33 @@ body.direction-b {
   background: var(--slate-50);
   line-height: 1.6;
   white-space: normal;
+  white-space-collapse: collapse;
+}
+
+body.direction-b :is(
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  li,
+  .pub-title,
+  .pub-authors,
+  .pub-body,
+  .hero-kicker,
+  .hero-role,
+  .hero-summary,
+  .project-card p,
+  .project-card h3,
+  .page-hero p,
+  .about-grid p,
+  .award-card-title,
+  .site-section-title
+) {
+  white-space: normal;
+  white-space-collapse: collapse;
 }
 
 body.direction-b .w-body {
