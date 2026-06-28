@@ -481,26 +481,31 @@ a {
   color: var(--brass);
 }
 
-/* Decorative leather-tone backgrounds */
-.art-bags {
-  background:
-    radial-gradient(circle at 70% 30%, rgba(192, 138, 62, 0.35), transparent 60%),
-    linear-gradient(150deg, #7a4a2b, #3d2415);
+.collection-grid--three {
+  grid-template-columns: repeat(3, 1fr);
 }
-.art-holsters {
+
+@media (max-width: 900px) {
+  .collection-grid--three {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Decorative leather-tone backgrounds */
+.art-belts {
   background:
     radial-gradient(circle at 30% 25%, rgba(192, 138, 62, 0.3), transparent 60%),
     linear-gradient(150deg, #5a3620, #1a0f08);
 }
-.art-tools {
+.art-wallets {
   background:
     radial-gradient(circle at 60% 70%, rgba(192, 138, 62, 0.3), transparent 60%),
     linear-gradient(150deg, #6b4326, #2a1810);
 }
-.art-dopp {
+.art-bags {
   background:
-    radial-gradient(circle at 40% 35%, rgba(192, 138, 62, 0.32), transparent 60%),
-    linear-gradient(150deg, #8a5530, #3d2415);
+    radial-gradient(circle at 70% 30%, rgba(192, 138, 62, 0.35), transparent 60%),
+    linear-gradient(150deg, #7a4a2b, #3d2415);
 }
 
 .collection-art svg {
@@ -513,7 +518,7 @@ a {
   opacity: 0.9;
 }
 
-/* ── Feature (3D tools) ── */
+/* ── Feature section ── */
 .feature {
   display: grid;
   grid-template-columns: 1fr 1fr;
