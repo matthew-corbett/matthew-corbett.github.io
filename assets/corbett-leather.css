@@ -230,14 +230,12 @@ a {
   margin: 0 auto;
 }
 
-.cl-hero-emblem {
+.cl-hero-product {
   width: 100%;
-  max-width: 540px;
+  max-width: 640px;
   height: auto;
   margin: 0 auto 2rem;
-  border-radius: 14px;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55);
-  border: 1px solid rgba(192, 138, 62, 0.35);
+  filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
 }
 
 .cl-hero-kicker {
@@ -504,8 +502,19 @@ a {
 }
 .art-bags {
   background:
-    radial-gradient(circle at 70% 30%, rgba(192, 138, 62, 0.35), transparent 60%),
+    radial-gradient(circle at 50% 40%, rgba(192, 138, 62, 0.25), transparent 65%),
     linear-gradient(150deg, #7a4a2b, #3d2415);
+}
+
+.collection-art img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center 30%;
+  padding: 1.25rem 1.25rem 5rem;
+  z-index: 0;
 }
 
 .collection-art svg {
@@ -543,6 +552,19 @@ a {
   width: 7rem;
   height: 7rem;
   color: var(--brass);
+}
+
+.feature-art--product {
+  padding: 2.5rem 2rem;
+  overflow: hidden;
+}
+
+.feature-art--product img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.45));
 }
 
 .feature-text .section-eyebrow {
