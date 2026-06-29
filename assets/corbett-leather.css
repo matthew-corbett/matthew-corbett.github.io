@@ -233,10 +233,11 @@ a {
 .cl-hero-product {
   display: block;
   width: 100%;
-  max-width: 640px;
+  max-width: 720px;
   height: auto;
   margin: 0 auto 2rem;
-  filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.55));
+  border-radius: var(--radius);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.45);
 }
 
 .cl-hero-kicker {
@@ -496,15 +497,9 @@ a {
     radial-gradient(circle at 30% 25%, rgba(192, 138, 62, 0.3), transparent 60%),
     linear-gradient(150deg, #5a3620, #1a0f08);
 }
-.art-wallets {
-  background:
-    radial-gradient(circle at 60% 70%, rgba(192, 138, 62, 0.3), transparent 60%),
-    linear-gradient(150deg, #6b4326, #2a1810);
-}
+.art-wallets,
 .art-bags {
-  background:
-    radial-gradient(circle at 50% 40%, rgba(192, 138, 62, 0.25), transparent 65%),
-    linear-gradient(150deg, #7a4a2b, #3d2415);
+  background: var(--leather-900);
 }
 
 .collection-art img {
@@ -512,9 +507,8 @@ a {
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  object-position: center 30%;
-  padding: 1.25rem 1.25rem 5rem;
+  object-fit: cover;
+  object-position: center center;
   z-index: 0;
 }
 
@@ -556,16 +550,16 @@ a {
 }
 
 .feature-art--product {
-  padding: 2.5rem 2rem;
+  padding: 0;
   overflow: hidden;
 }
 
 .feature-art--product img {
   width: 100%;
-  height: auto;
-  max-height: 300px;
-  object-fit: contain;
-  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.45));
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+  display: block;
 }
 
 .feature-art--photo {
