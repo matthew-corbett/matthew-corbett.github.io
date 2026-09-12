@@ -370,6 +370,55 @@ body.direction-b main > section.c1vt1fb.c1lw4ao9 {
   align-items: start;
 }
 
+.about-profile {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-photo {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: var(--shadow-md);
+  flex-shrink: 0;
+}
+
+.about-profile-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--navy-800);
+  line-height: 1.3;
+  margin-bottom: 0.35rem;
+}
+
+.about-profile-role {
+  font-size: 0.92rem;
+  color: var(--slate-600);
+  line-height: 1.4;
+}
+
+.about-email,
+.about-dir {
+  display: inline-block;
+  margin-top: 0.55rem;
+  margin-right: 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.about-email:hover,
+.about-dir:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
 .about-grid p {
   color: var(--slate-600);
   margin: 0 0 1rem;
@@ -410,6 +459,16 @@ body.direction-b main > section.c1vt1fb.c1lw4ao9 {
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
+  }
+
+  .about-profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-photo {
+    width: 112px;
+    height: 112px;
   }
 }
 
