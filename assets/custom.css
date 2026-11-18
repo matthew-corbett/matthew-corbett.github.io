@@ -562,6 +562,13 @@ body.direction-b #about .w-box > .w-box.cry9bxc {
   font-weight: 600;
 }
 
+.pub-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
 .pub-links {
   display: flex;
   flex-wrap: wrap;
